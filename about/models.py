@@ -4,7 +4,7 @@ from cloudinary.models import CloudinaryField
 
 class About(models.Model):
     title = models.CharField(max_length=200)
-    profile_image = models.CloudinaryField('image', default='placeholder')
+    profile_image = CloudinaryField('image', default='placeholder')
     content = models.TextField()
     updated_on = models.DateTimeField(auto_now=True)
    
